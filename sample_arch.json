@@ -1,0 +1,267 @@
+{
+   "connections" : [
+      {
+         "from" : "f58c7461-c214-43ad-a784-ac63f000e41b:output",
+         "name" : "triples",
+         "to" : "6bc81240-6cac-4c0d-b545-f49f14a77e73:input",
+         "uuid" : "0142265e-2bf2-4977-93b5-f65a77f531de"
+      },
+      {
+         "from" : "6bc81240-6cac-4c0d-b545-f49f14a77e73:output",
+         "name" : "anonymous",
+         "to" : "f7cd50ca-b2da-422f-a4b0-f15cd1177be3:input",
+         "uuid" : "a78feec3-47ff-41c2-a48c-5f3991ad49cc"
+      },
+      {
+         "from" : "f0fba031-9599-4e40-9a09-c0b10003f444:output",
+         "name" : "anonymous",
+         "to" : "f7cd50ca-b2da-422f-a4b0-f15cd1177be3:input2",
+         "uuid" : "d4049584-63f9-482c-9847-73cab96291bc"
+      },
+      {
+         "from" : "cd75904f-0ca0-4552-abb8-f4f17ac052e7:output",
+         "name" : "semantic scene description",
+         "to" : "6bc81240-6cac-4c0d-b545-f49f14a77e73:input",
+         "uuid" : "58e763a8-078d-40cc-a408-7bef2be14761"
+      },
+      {
+         "from" : "6bc81240-6cac-4c0d-b545-f49f14a77e73:output",
+         "name" : "anonymous",
+         "to" : "ff4847e5-d040-4b4e-be00-514ca64672b6:input",
+         "uuid" : "d9e761f5-6615-469d-8351-1e064604c0b8"
+      },
+      {
+         "from" : "6bc81240-6cac-4c0d-b545-f49f14a77e73:output",
+         "name" : "state",
+         "to" : "31608f7e-34bd-409d-b5d0-2d39f539585c:state",
+         "uuid" : "625881e9-7e1f-40f9-ba2d-5ce6cf35a1da"
+      },
+      {
+         "from" : "f0fba031-9599-4e40-9a09-c0b10003f444:output",
+         "name" : "anonymous",
+         "to" : "0f386d39-2398-4378-94ef-ad77e2a3f445:input",
+         "uuid" : "aacaef44-ccee-4341-b14a-f90687374a4e"
+      },
+      {
+         "from" : "ff4847e5-d040-4b4e-be00-514ca64672b6:output",
+         "name" : "anonymous",
+         "to" : "6bc81240-6cac-4c0d-b545-f49f14a77e73:input",
+         "uuid" : "2c7d78a3-ec6d-4a29-8c55-2637ac3a8ccf"
+      },
+      {
+         "from" : "cd75904f-0ca0-4552-abb8-f4f17ac052e7:output",
+         "name" : "human focus of attention",
+         "to" : "f0fba031-9599-4e40-9a09-c0b10003f444:input",
+         "uuid" : "f3e008b5-edca-407b-bb90-16dba25cac06"
+      },
+      {
+         "from" : "0f386d39-2398-4378-94ef-ad77e2a3f445:output",
+         "name" : "anonymous",
+         "to" : "6bc81240-6cac-4c0d-b545-f49f14a77e73:input2",
+         "uuid" : "07df681c-d795-4046-b37a-cf7658026b10"
+      },
+      {
+         "from" : "31608f7e-34bd-409d-b5d0-2d39f539585c:output",
+         "name" : "plans",
+         "to" : "f7cd50ca-b2da-422f-a4b0-f15cd1177be3:input2",
+         "uuid" : "904c890c-1c2e-4288-a5aa-38d55a7f5a80"
+      },
+      {
+         "from" : "f7cd50ca-b2da-422f-a4b0-f15cd1177be3:output",
+         "name" : "actions",
+         "to" : "98e1e0c3-132a-40f8-9598-c2e24b4444d4:input",
+         "uuid" : "3ae364f7-c3ca-4d81-bb22-a55fb5373e2a"
+      }
+   ],
+   "description" : "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Sample architecture</p></body></html>",
+   "encoding_version" : "0.1",
+   "name" : "SampleArch",
+   "nodes" : [
+      {
+         "cognitive_function" : "Emotions",
+         "name" : "Emotions manager",
+         "ports" : [
+            {
+               "direction" : "in",
+               "name" : "input"
+            },
+            {
+               "direction" : "in",
+               "name" : "input2"
+            },
+            {
+               "direction" : "out",
+               "name" : "output"
+            }
+         ],
+         "position" : [ 1044.6875, 51.562499999999915 ],
+         "uuid" : "cbeea8bb-4e71-41bf-ba12-e73ab49b5034"
+      },
+      {
+         "cognitive_function" : "Reasoning",
+         "name" : "Planner",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "output"
+            },
+            {
+               "direction" : "in",
+               "name" : "state"
+            },
+            {
+               "direction" : "in",
+               "name" : "input2"
+            }
+         ],
+         "position" : [ 1016.6875, 583.8125 ],
+         "uuid" : "31608f7e-34bd-409d-b5d0-2d39f539585c"
+      },
+      {
+         "cognitive_function" : "Socio-cog.",
+         "name" : "Theory of Mind",
+         "ports" : [
+            {
+               "direction" : "in",
+               "name" : "input2"
+            },
+            {
+               "direction" : "in",
+               "name" : "input"
+            },
+            {
+               "direction" : "out",
+               "name" : "output"
+            }
+         ],
+         "position" : [ 462.375, 262.74950000000001 ],
+         "uuid" : "0f386d39-2398-4378-94ef-ad77e2a3f445"
+      },
+      {
+         "cognitive_function" : "Learning",
+         "name" : "Rehearsal",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "output"
+            },
+            {
+               "direction" : "in",
+               "name" : "input2"
+            },
+            {
+               "direction" : "in",
+               "name" : "input"
+            }
+         ],
+         "position" : [ 743.5625, 690.1869999999999 ],
+         "uuid" : "ff4847e5-d040-4b4e-be00-514ca64672b6"
+      },
+      {
+         "cognitive_function" : "Language",
+         "name" : "NLP",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "output"
+            }
+         ],
+         "position" : [ 96.375, 602.6869999999999 ],
+         "uuid" : "f58c7461-c214-43ad-a784-ac63f000e41b"
+      },
+      {
+         "cognitive_function" : "Action",
+         "name" : "Actuation",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "output"
+            },
+            {
+               "direction" : "in",
+               "name" : "input"
+            },
+            {
+               "direction" : "in",
+               "name" : "input2"
+            }
+         ],
+         "position" : [ 1521.3125, 257.9375 ],
+         "uuid" : "98e1e0c3-132a-40f8-9598-c2e24b4444d4"
+      },
+      {
+         "cognitive_function" : "Memory",
+         "name" : "KB",
+         "ports" : [
+            {
+               "direction" : "in",
+               "name" : "input2"
+            },
+            {
+               "direction" : "out",
+               "name" : "output"
+            },
+            {
+               "direction" : "in",
+               "name" : "input"
+            }
+         ],
+         "position" : [ 735.0625, 442.49950000000001 ],
+         "uuid" : "6bc81240-6cac-4c0d-b545-f49f14a77e73"
+      },
+      {
+         "cognitive_function" : "Decision making",
+         "name" : "Supervision",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "output"
+            },
+            {
+               "direction" : "in",
+               "name" : "input2"
+            },
+            {
+               "direction" : "in",
+               "name" : "input"
+            }
+         ],
+         "position" : [ 1201.625, 260.6869999999999 ],
+         "uuid" : "f7cd50ca-b2da-422f-a4b0-f15cd1177be3"
+      },
+      {
+         "cognitive_function" : "Attention",
+         "name" : "With-me-ness",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "output"
+            },
+            {
+               "direction" : "in",
+               "name" : "input2"
+            },
+            {
+               "direction" : "in",
+               "name" : "input"
+            }
+         ],
+         "position" : [ 254.87500000000011, 69.999500000000097 ],
+         "uuid" : "f0fba031-9599-4e40-9a09-c0b10003f444"
+      },
+      {
+         "cognitive_function" : "Perception",
+         "name" : "Perception",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "output"
+            }
+         ],
+         "position" : [ 52.125, 368.9369999999999 ],
+         "uuid" : "cd75904f-0ca0-4552-abb8-f4f17ac052e7"
+      }
+   ],
+   "uuid" : "08cdb51e-532e-4e5e-bff7-98bb43deeadd",
+   "version" : "1.0"
+}
